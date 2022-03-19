@@ -1,66 +1,150 @@
 body {
-    width: 1240px;
-    margin: 0 auto 50px;
-
-
-.header {
-    height: 150px;
-    text-align: center;
-
- .logo {
-     font-size: 20px;
-     
- }   
- 
- .globalNav {
-     height: 50px;
-     background-color: gray;
-     width: 100%;  
-
-     ul {
-        justify-content: space-evenly;
-
-        list-style: none;
-        display: flex;
-        padding: 0;
-        margin: 0; 
-        text-align: center; 
-
-
-         li {
-            font-size: 18px;
-            padding: 15px 30px;
-            display: inline-block;
-
-             &:hover {
-                 color: white;
-             }
-
-         }
-     }
- }
-
-
-}
+    background-image: url("images/background.jpg");
+    font-size: 16px;
+    font-family: 'arial','Hiragino Sans','Meiryo','sans-serif';
+    color: #333333;
 
 
 
+    header {
+        width: 1240px;
+        margin: 0 auto 44px;
 
-.footer {
-    height: 250px;
-    background-color: gray;
+        h1 {
+            text-align: center;
+            padding: 20px 0px 16px;
+        }
 
-    .contact {
-        padding-top: 5px;
-        padding-left: 50px;
+        nav {
+            ul {
+                display: flex;
+                justify-content: center;
+                border-top: 2px solid black;
+                border-bottom: 2px solid black;
+                background-color: #e8e7e6;
+                padding: 12px 0px 10px;
+                list-style: none;
 
-        .label {
-            font-size: 30px;
+
+
+                li {
+                    margin: 0 20px;
+
+
+                    a {
+                        font-size: 22px;
+                        font-weight: bold;
+                        color: black;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline double;
+                        }
+                    }
+                }
+            }
         }
     }
-}
+
+    div {
+        width: 1240px;
+        margin: 0 auto 50px;
+        display: flex;
+        justify-content: space-between;
 
 
+        main {
+            flex-basis: 500px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 62px 72px 32px 72px;
+            box-shadow: 0px 0px 8px rgba(0,0,0,0.16);
 
+            article {
+                flex-basis: 284px;
 
+                h2 {
+                    font-size: 40px;
+                    font-weight: 500;
+                    margin-bottom: 8px;
+                }
+
+                .eyecatch {
+                    margin-bottom: 26px;
+                }
+
+                h3 {
+                    border-bottom: 2px solid black;
+                    margin-bottom: 20px;
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+
+                section {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        aside {
+            flex-basis: 284px;
+
+            nav {
+                border-radius: 16px;
+                background-color: #ffffff;
+                box-shadow: 0px 0px 8px raba(0,0,0,0.16);
+                padding: 24px 28px;
+                margin-bottom: 24px;
+
+                ul {
+                    font-size: 14px;
+                }
+
+                h2 {
+                    margin-bottom: 18px;
+                    font-size: 22px;
+                    font-weight: bold;
+                    color: black;
+                }
+            }
+
+            .categoryNav {
+                ul {
+                    list-style: none;
+
+                    li {
+                        margin: 0 0 16px 20px;
+
+                        a {
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+            .recentNav {
+                ul {
+                    height: 240px;
+                    overflow: hidden scroll;
+                    list-style: none;
+
+                    li {
+                        padding-bottom: 5px;
+                        margin-bottom: 5px;
+
+                        a {
+                            color: blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: #e8e7e6;
+        color: black;
+        text-align: center;
+        padding: 14px 10px 20px;
+    }
 }
