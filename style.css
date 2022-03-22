@@ -54,12 +54,13 @@ body div {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: white;
 }
 
 body div main {
   -ms-flex-preferred-size: 500px;
       flex-basis: 500px;
-  background-color: #ffffff;
+  background-color: #413c3c;
   border-radius: 16px;
   padding: 62px 72px 32px 72px;
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
@@ -82,7 +83,7 @@ body div main article .eyecatch {
 }
 
 body div main article h3 {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
   margin-bottom: 20px;
   font-size: 28px;
   font-weight: 600;
@@ -104,7 +105,7 @@ body div main article .kadomaru {
 }
 
 body div main article .kadomaru:hover {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 body div aside {
@@ -157,6 +158,21 @@ body div aside .recentNav ul li {
 
 body div aside .recentNav ul li a {
   color: blue;
+}
+
+body div aside .kadomaru {
+  width: 300px;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  background: rgba(6, 128, 133, 0.808);
+  border-radius: 20px;
+}
+
+body div aside .kadomaru:hover {
+  opacity: 0.5;
 }
 
 body footer {
