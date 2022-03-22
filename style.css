@@ -92,6 +92,21 @@ body div main article section {
   margin-bottom: 50px;
 }
 
+body div main article .kadomaru {
+  width: 200px;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  background: rgba(6, 128, 133, 0.808);
+  border-radius: 20px;
+}
+
+body div main article .kadomaru:hover {
+  opacity: 0.3;
+}
+
 body div aside {
   -ms-flex-preferred-size: 284px;
       flex-basis: 284px;
